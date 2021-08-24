@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,count=0,v=0;
+    cin>>n;
+    char s[n];
+    cin>>s;
+    for(int i=0;i<n;i++){
+        if(s[i]=='U'){
+            count+=1;
+            if(count==0){
+                v+=1;
+            }
+        }
+        else {
+            count-=1;
+        }
+    }
+    cout<<v;
+}
